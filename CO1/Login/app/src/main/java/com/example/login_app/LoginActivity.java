@@ -14,12 +14,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        showName=(TextView) findViewById(R.id.tvname);
-        String showNameStr=showName.getText().toString();
+        showName=(TextView) findViewById(R.id.textView);
         Intent intent=getIntent();
         String name=intent.getStringExtra("username");
-        showName.setText(showNameStr+" "+name);
+        System.out.println(name);
+        showName.setText(name);
 
 
     }
