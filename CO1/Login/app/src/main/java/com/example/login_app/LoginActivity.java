@@ -20,6 +20,5 @@ public class LoginActivity extends AppCompatActivity {
         System.out.println(name);
         showName.setText(name);
 
-
     }
 }

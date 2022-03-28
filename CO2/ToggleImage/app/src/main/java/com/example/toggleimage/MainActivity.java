@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 i1.setVisibility(View.GONE);
                 i2.setVisibility(View.VISIBLE);
             }

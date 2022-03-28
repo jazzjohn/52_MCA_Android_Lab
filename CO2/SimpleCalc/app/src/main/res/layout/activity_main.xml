@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="358dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="7"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:hint="Enter First number" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="358dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="7"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="358dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="7"
+        android:height="20dp"
+        android:ems="10"
+        android:hint="result"
+        android:minHeight="32dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="*" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
